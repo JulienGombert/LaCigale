@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html lang="fr_FR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- Insertion favicon, picto dans onglet du navigateur -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="css/bootstrap-dark.css">
+  <link rel="stylesheet" href="css/theme-dark.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+
+  <title>La Cigale, chocolaterie</title>
+
+</head>
+
+
+
+
+
+
+
+
+<!-- pour que la navigation se repère lorsqu'on navigue sur la page... spy/scroll -->
+
+<body data-offset="50" data-spy="scroll" data-target=".navbar" class="dark-theme">
+
+  <nav class="navbar navbar-fixed-top shadow" id="js-nav">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <!-- pour le menu burger -->
+        <button type="button" class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#">
+          <img src="img/logo1.png" alt="Logo">
+        </a>
+
+      </div>
+
+      <div class="row navbar-collapse collapse" id="myNavBar">
+        <ul class="nav navbar-nav">
+          <li><a href="#home">Accueil</a></li>
+          <li><a href="#about">La chocolaterie</a></li>
+          <li><a href="#special">Offre spéciale</a></li>
+          <li><a href="#products">Produits</a></li>
+          <li><a href="#testimonials">Une histoire de famille</a></li>
+          <li><a href="#history">Historique</a></li>
+          <li><a href="#news">Actualités</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- Slider carousel -->
+
+  <section class="home section image-slider" id="home">
+    <div class="home-slider text-center">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide" style="background: url(img/slider/slide2.jpg);">
+          <img src="img/logo1.png" alt="Logo store">
+          <h2 class="home-slider-title-main white-color">
+            Chocolaterie artisanale
+          </h2>
+          <div class="home-buttons text-center">
+            <a href="#products" class="btn btn-lg btn-primary">
+              Nos produits
+            </a>
+          </div>
+        </div>
+
+
+        <div class="swiper-slide" style="background: url(img/slider/slide1.jpg);">
+          <img src="img/logo1.png" alt="Logo store">
+          <h2 class="home-slider-title-main white-color">
+            tout le goût du chocolat
+          </h2>
+          <div class="home-buttons text-center">
+            <a href="#products" class="btn btn-lg btn-primary">
+              Offre spéciale
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+        <!-- Pagination (bulles) et flèches -->
+      <div class="home-pagination">
+      </div>
+
+      <div class="home-slider-prev left-arrow-negative">
+        <span class="ti-arrow-left"></span>
+      </div>
+
+      <div class="home-slider-next right-arrow-negative">
+        <span class="ti-arrow-right"></span>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section class="container-fluid about white-color no-padding" id="about">
+
+    <div class="about-background about-background-1 row no-margin">
+
+      <div class="col-md-6 about-black-box">
+        <h3 class="section heading">
+          La Chocolaterie
+        </h3>
+        <p>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iste quam modi, nostrum in error quos accusamus obcaecati autem eligendi suscipit, tempora odit est deserunt laborum reprehenderit possimus sunt, sequi.
+          </span>
+          <span>
+            Soluta quaerat necessitatibus mollitia fugit impedit corporis. Eum facere maxime mollitia, libero? Molestias doloribus quaerat hic magni autem nesciunt, nostrum, at sequi quos praesentium libero deserunt asperiores ratione commodi quae.
+          </span>
+          <span>
+            Soluta quaerat necessitatibus mollitia fugit impedit corporis. Eum facere maxime mollitia, libero? Molestias doloribus quaerat hic magni autem nesciunt, nostrum, at sequi quos praesentium libero deserunt asperiores ratione commodi quae.
+          </span>
+          <span>
+            Soluta quaerat necessitatibus mollitia fugit impedit corporis. Eum facere maxime mollitia, libero? Molestias doloribus quaerat hic magni autem nesciunt, nostrum, at sequi quos praesentium libero deserunt asperiores ratione commodi quae.
+          </span>
+        </p>
+        <a href="#testimonials" class="btn btn-default">En savoir plus</a>
+      </div>
+
+      <!-- on remplit la row pour atteindre col-12... pour éviter de perdre du temps à débuguer si qqchse est flottant... -->
+      <div class="col-md-6"></div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <section class="countdown" id="special">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h3 class="section-heading">
+            Offre spéciale
+          </h3>
+        </div>
+
+
+        <div class="col-md-5">
+          <ul class="product-list product-list-vertical">
+            <li class="wow fadeInUp" data-wow-delay=".2s">
+              <span class="product-list-left pull-left">
+                <a href="#" data-target="#product-01" data-toggle="modal">
+                  <img src="img/product3.png" alt="" class="product-list-primary-img">
+                  <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-7 text-center">
+          <div class="countdown-container">
+            <h3 class="wow fadeInDown">
+              Chocolat Haloween
+            </h3>
+            <p class="wow fadeInDown">
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vel eius quibusdam debitis dicta, autem alias voluptatibus esse hic cumque. Aperiam facere, recusandae. Tempore voluptate eligendi quidem asperiores, cumque eum!
+              </span>
+              <span>
+                Dolorem quod cupiditate fugiat quo quisquam eaque odit vero laboriosam ad sed, natus, assumenda asperiores necessitatibus saepe suscipit repudiandae ut dolor! Nihil omnis commodi accusamus sequi doloribus vitae, aut eaque.
+              </span>
+            </p>
+
+            <!-- Compteur -->
+            <ul id="countdown" class="countdown-counter wow fadeInUp">
+
+            </ul>
+
+            <span class="countdown-price h3 wow fadeInUp">
+              30 €
+            </span>
+
+            <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat Haloween" data-cost="30€" data-id="9">
+              <span class="ti-shopping-cart">
+              </span>
+                Ajouter au panier
+            </button>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+<!-- produits -->
+  <section class="section-min section product produits" id="products">
+
+    <div class="container overflow-hidden">
+      <div class="row">
+
+        <div class="col-md-12">
+          <h3 class="section-heading">Produits</h3>
+        </div>
+
+        <div class="col-md-12">
+          <div class="product-list-slider">
+            <ul class="swiper-wrapper product-list product-list-vertical">
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+
+              <li class="swiper-slide wow fadeInUp text-center" data-wow-delay=".2s">
+                <span class="product-list-left pull-left">
+                  <a href="#" data-target="#product-01" data-toggle="modal">
+                    <img src="img/product3.png" alt="" class="product-list-primary-img">
+                    <img src="img/product4.png" alt="" class="product-list-secondary-img">
+                  </a>
+                </span>
+                <a href="#" data-target="product-01" data-toggle="modal">
+                  <span class="product-list pull-left">
+                    <span class="product-list-name h3">Chocolat</span>
+                    <span class="product-list-price">3,50€</span>
+                  </span>
+                </a>
+                <button type="button" class="btn btn-default add-item wow swing" data-image="img/product3.png" data-name="Chocolat" data-cost="3,50€" data-id="1">
+                  <span class="ti-shopping-cart">
+                  </span>
+                    Ajouter au panier
+                </button>
+              </li>
+
+            </ul>
+
+
+
+
+            <!-- Pagination (bulles) et flèches -->
+          <div class="product-list-pagination text-center">
+          </div>
+
+          <div class="product-list-slider-prev left-arrow-negative">
+            <span class="ti-arrow-left"></span>
+          </div>
+
+          <div class="product-list-slider-next right-arrow-negative">
+            <span class="ti-arrow-right"></span>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12">
+          <h3 class="section-heading">
+            Une histoire de famille
+          </h3>
+        </div>
+
+        <div class="col-md-12 testimonials-slider text-center">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+
+              <div class="testimonials-container shadow">
+                <img src="img/user.png" class="wow fadeInUp" alt="">
+                <h3 class="wow fadeInUp" data-wow-delay=".4s">
+                  Didier <span>Fondateur</span>
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime eaque, ab quia impedit, enim suscipit delectus quod officia deleniti commodi voluptate soluta minima odit sint consequatur quisquam adipisci magnam.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="swiper-slide">
+
+              <div class="testimonials-container shadow">
+                <img src="img/user.png" class="wow fadeInUp" alt="">
+                <h3 class="wow fadeInUp" data-wow-delay=".4s">
+                  Didier <span>Fondateur</span>
+                </h3>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur maxime eaque, ab quia impedit, enim suscipit delectus quod officia deleniti commodi voluptate soluta minima odit sint consequatur quisquam adipisci magnam.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+            <!-- Pagination (bulles) et flèches -->
+            <div class="testimonials-pagination text-center">
+            </div>
+
+            <div class="testimonials-slider-prev left-arrow-negative">
+              <span class="ti-arrow-left">
+              </span>
+            </div>
+
+            <div class="testimonials-slider-next right-arrow-negative">
+              <span class="ti-arrow-right">
+              </span>
+            </div>
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="timeline" id="history">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-heading">
+            Historique
+            </h3>
+            <div class="timeline-container" id="timeline">
+
+          <!-- Item timeline-->
+            <div class="timeline-block timeline-block-image-1">
+              <div class="timeline-point">
+              </div>
+              <div class="timeline-content wow fadeInLeft">
+                <span class="timeline-date">
+                  <span class="timeline-month">
+                    Mai
+                  </span>
+                  <span class="timeline-year">
+                    1981
+                  </span>
+                </span>
+                <h2>
+                  Le début
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ut dignissimos corrupti. Eos qui aperiam rem repellendus velit eius iure rerum animi tenetur! Optio deleniti ipsam, cupiditate. Cumque, eum, laboriosam.
+                </p>
+              </div>
+            </div>
+
+          <!-- /Item timeline -->
+          <!-- Item timeline-->
+
+            <div class="timeline-block timeline-block-image-2">
+              <div class="timeline-point">
+              </div>
+              <div class="timeline-content wow fadeInRight">
+                <span class="timeline-date">
+                  <span class="timeline-month">
+                    Mai
+                  </span>
+                  <span class="timeline-year">
+                    1981
+                  </span>
+                </span>
+                <h2>
+                  Le début
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ut dignissimos corrupti. Eos qui aperiam rem repellendus velit eius iure rerum animi tenetur! Optio deleniti ipsam, cupiditate. Cumque, eum, laboriosam.
+                </p>
+              </div>
+            </div>
+
+          <!-- /Item timeline -->
+          <!-- Item timeline-->
+            <div class="timeline-block timeline-block-image-3">
+              <div class="timeline-point">
+              </div>
+              <div class="timeline-content wow fadeInLeft">
+                <span class="timeline-date">
+                  <span class="timeline-month">
+                    Mai
+                  </span>
+                  <span class="timeline-year">
+                    1981
+                  </span>
+                </span>
+                <h2>
+                  Le début
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ut dignissimos corrupti. Eos qui aperiam rem repellendus velit eius iure rerum animi tenetur! Optio deleniti ipsam, cupiditate. Cumque, eum, laboriosam.
+                </p>
+              </div>
+            </div>
+
+          <!-- /Item timeline -->
+          <!-- Item timeline-->
+
+            <div class="timeline-block timeline-block-image-4">
+              <div class="timeline-point">
+              </div>
+              <div class="timeline-content wow fadeInRight">
+                <span class="timeline-date">
+                  <span class="timeline-month">
+                    Mai
+                  </span>
+                  <span class="timeline-year">
+                    1981
+                  </span>
+                </span>
+                <h2>
+                  Le début
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam ut dignissimos corrupti. Eos qui aperiam rem repellendus velit eius iure rerum animi tenetur! Optio deleniti ipsam, cupiditate. Cumque, eum, laboriosam.
+                </p>
+              </div>
+            </div>
+          <!-- /Item timeline -->
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Actualités -->
+  <section class="post-list" id="news">
+    <div class="container overflow-hidden">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-heading">Actualités</h3>
+        </div>
+
+        <!-- sliders actus -->
+        <div class="post-slider col-md-12">
+          <div class="swiper-wrapper">
+            <!-- item actu-->
+            <div class="swiper-slide">
+              <div class="post-entry wow fadeInUp">
+                <a href="#" data-toggle="modal" data-target="#post-O1">
+                  <span class="post-entry-cover" style="background-image:url(img/blog-cover.jpg);"></span>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="h3">Actualité n°1</a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">Lire la suite
+                <span class="ti-arrow-right ico"></span>
+              </a>
+
+              </div>
+            </div>
+            <!-- / items actu-->
+            <!-- item actu-->
+            <div class="swiper-slide">
+              <div class="post-entry wow fadeInUp">
+                <a href="#" data-toggle="modal" data-target="#post-O1">
+                  <span class="post-entry-cover" style="background-image:url(img/blog-cover.jpg);"></span>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="h3">Actualité n°2</a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">Lire la suite
+                <span class="ti-arrow-right ico"></span>
+              </a>
+
+              </div>
+            </div>
+            <!-- / items actu-->
+            <!-- item actu-->
+            <div class="swiper-slide">
+              <div class="post-entry wow fadeInUp">
+                <a href="#" data-toggle="modal" data-target="#post-O1">
+                  <span class="post-entry-cover" style="background-image:url(img/blog-cover.jpg);"></span>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="h3">Actualité n°3</a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">Lire la suite
+                <span class="ti-arrow-right ico"></span>
+              </a>
+
+              </div>
+            </div>
+            <!-- / items actu-->
+            <!-- item actu-->
+            <div class="swiper-slide">
+              <div class="post-entry wow fadeInUp">
+                <a href="#" data-toggle="modal" data-target="#post-O1">
+                  <span class="post-entry-cover" style="background-image:url(img/blog-cover.jpg);"></span>
+                </a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="h3">Actualité n°4</a>
+                <a href="#" data-toggle="modal" data-target="#post-01" class="post-entry-more">Lire la suite
+                <span class="ti-arrow-right ico"></span>
+              </a>
+
+              </div>
+            </div>
+            <!-- / items actu-->
+
+
+          </div>
+
+
+
+        </div>
+        <!-- Pagination (bulles) et flèches -->
+        <div class="post-pagination text-center">
+        </div>
+
+        <div class="post-slider-prev left-arrow-negative">
+          <span class="ti-arrow-left">
+          </span>
+        </div>
+
+        <div class="post-slider-next right-arrow-negative">
+          <span class="ti-arrow-right">
+          </span>
+        </div>
+        <!-- / sliders actus -->
+
+      </div>
+    </div>
+
+    <!-- Modal pour les actus -->
+    <div class="modal fade" id="post-01" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+      <!-- contenu de la modal -->
+      <div class="modal-content shadow">
+        <a href="" class="close" data-dismiss="modal">
+          <span class="ti-close">
+          </span>
+        </a>
+        <div class="modal-body">
+          <div class="post-entry post-entry-modal">
+            <h3 class="section-heading">
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <span class="post-entry-meta">
+              <img src="img/user.png" alt="" class="post-entry-author pull-left">
+              <span class="post-entry-author-name pull-left">Didier</span>
+              <span class="post-entry-category">chocolat, origines</span>
+            </span>
+            <span class="post-entry-cover" style="background-image:url(img/blog-cover.jpg);"></span>
+            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quidem neque nobis enim mollitia fugit debitis quod et nam alias, dolorem hic ipsam incidunt, porro architecto numquam odio suscipit tempore.</span>
+            <span>Exercitationem expedita, delectus! At esse quae labore ex, distinctio hic alias modi consectetur delectus, quasi vitae, facilis error officiis autem magnam ipsa porro illum praesentium. Pariatur laudantium, totam distinctio et!</span>
+            <span>Natus ullam ad in nulla dicta nisi, fuga accusamus quaerat non ipsum eveniet similique maxime id eius fugit voluptatibus modi harum omnis quas, debitis neque deserunt nam temporibus! Consectetur, odit.</span>
+            <span>Voluptatibus, quaerat. Culpa voluptates corrupti porro facilis quidem et non, odit laudantium sapiente repellat tempore animi dolores atque illo a itaque at magnam maxime aliquid nihil provident voluptatum, veniam? Provident!</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- /contenu de la modal -->
+      </div>
+    </div>
+    <!-- /Modal pour les actus -->
+
+  </section>
+
+
+<!-- Contact -->
+
+  <section id="contact" class="contact">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-heading">Contact</h3>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-data">
+            <ul class="white-color">
+              <li><span class="ti-home icon"></span><span>Chocolaterie artisanale la Cigale</span></li>
+              <li><span class="ti-mobile icon"></span><span>05 53 56 43 45</span></li>
+              <li><span class="ti-email icon"></span><span>didierqqchose@cestlui.oui</span></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8 col-md-push-1">
+          <div class="contact-form">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Nom">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="contact-email" placeholder="E-mail">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="mobile" placeholder="Mobile">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="subject" placeholder="Message" maxlength="140" rows="7"></textarea>
+              </div>
+              <button type="button" id="submit" class="btn btn-lg btn-primary text-center">Envoyer votre message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<!-- /Contact -->
+
+
+
+
+      <!-- insertion des scripts -->
+
+      <script src="js/vendor/wow.js"></script>
+      <script src="js/vendor/jquery-1.11.2.min.js"></script>
+      <script src="js/vendor/swiper.min.js"></script>
+      <script src="js/vendor/bootstrap.js"></script>
+      <script src="js/vendor/jquery.countdown.js"></script>
+      <script src="js/vendor/jquery.countTo.js"></script>
+      <script src="js/vendor/jquery.inview.js"></script>
+      <script src="js/tt-cart.js"></script>
+      <script src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
